@@ -1,0 +1,106 @@
+/* fuente de google */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* box model */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainheader{
+    background-color: aquamarine;
+    list-style-type: none;
+}
+
+/* estilo de header */
+
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+header nav ul{
+    list-style: none;
+}
+header nav ul li a{
+    color: #010102;
+}
+
+.descripción{
+    margin: 0px 10px;
+}
+.descripción span{
+    color: blueviolet;
+}
+
+/* estilo de main*/
+
+main .portada{
+    width: 100%;
+    object-fit: cover;
+}
+
+main h2{
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* estilo de section contcato*/
+
+/*#contacto{
+    padding: 90px;
+}*/
+
+/* box model */
+
+.box-model{
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    padding: 10px 0px;
+    margin: 0px 10px;
+}
+
+/*flex model*/
+
+.padre-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* orden de videos en MÚSICA */
+
+body .videos{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr ;
+    grid-template-columns:1fr 1fr 1fr ;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+body .videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+}
+
+/* mq desktop */
+
+@media screen and (min-width: 1024px) {
+
+body .videos{
+    flex-direction: row; 
+}
+}
+
