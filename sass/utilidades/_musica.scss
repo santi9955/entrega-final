@@ -1,17 +1,23 @@
-body{
-    .videos{
-    display: grid;
-    grid-template-rows:1fr 1fr 1fr ;
-    grid-template-columns:1fr 1fr 1fr ;
-    row-gap: 20px;
-    column-gap: 20px;
+body {
+    main {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
     }
+
+    .videos {
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        iframe {
+            width: 80vw;
+            height: 60vw;
+            max-width: 560px;
+            max-height: 315px;
+        }
+    }
+
 }
-
-/* mq desktop */
-@media screen and (min-width: 1024px) {
-
-    body .videos{
-        flex-direction: row; 
-    }
-    }
