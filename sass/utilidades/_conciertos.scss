@@ -1,31 +1,31 @@
-body{
-    #conciertos{
-        .itinerario{
+body {
+    #conciertos {
+        .itinerario {
             display: flex;
         }
-        .itinerario2{
+
+        .itinerario2 {
             display: flex;
         }
-        .itinerario3{
+
+        .itinerario3 {
             display: flex;
         }
-        .fecha{
-        background-color: aqua;
-        text-align: left;
-        width: 50%;
-        height: 50%;
-        padding-left: 100px;
-        margin: 30px;
-        font-size: large;
+
+        .fecha {
+            // background-color: aqua;
+            text-align: left;
+            @extend %form-conciertos;
+            margin-left: 200px;
+            padding-left: 200px;
         }
-        .donde{
-        background-color: aquamarine;
-        text-align: right;
-        width: 50%;
-        height: 50%;
-        padding-right: 100px;
-        margin: 30px;
-        font-size: larger;
+
+        .donde {
+            // background-color: aquamarine;
+            text-align: right;
+            @extend %form-conciertos;
+            margin-right: 200px;
+            padding-right: 200px;
         }
     }
 }
